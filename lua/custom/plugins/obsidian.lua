@@ -62,9 +62,8 @@ return {
     },
   },
   config = function()
-    require 'obsidian'
-    vim.keymap.set('n', function()
+    vim.keymap.set('n', '<leader>on', function()
       obsidian_new '+ Encounters/'
-    end, { desc = 'New note' })
+    end, { desc = 'Obsidian New note' })
   end,
 }
